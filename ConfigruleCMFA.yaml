@@ -35,18 +35,18 @@ proxies:
   - name: AKUN1
     server: quiz.int.vidio.com
     port: 80
-    type: vmess
-    uuid: 396415b0-6f7d-4df3-9d50-1a3ff9115b1a
+    type: trojan
+    uuid: eea95f0e-35e4-41ef-82cd-c9f8950fa9be
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: id2-ray.ipservers.xyz
+    servername: vipgpi.det.my.id
     network: ws
     ws-opts:
-      path: /JAGOANSSH/
+      path: /trojan-ws
       headers:
-        Host: id2-ray.ipservers.xyz
+        Host: vipgpi.det.my.id
     udp: true
   - name: AKUN2
     server: quiz.int.vidio.com
@@ -167,3 +167,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
