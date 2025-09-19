@@ -34,19 +34,17 @@ dns:
 proxies:
   - name: AKUN1
     server: quiz.int.vidio.com
-    port: 443
-    type: trojan
-    uuid: eea95f0e-35e4-41ef-82cd-c9f8950fa9be
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: vipgpi.det.my.id
-    network: ws
-    ws-opts:
-      path: /trojan-ws
-      headers:
-        Host: vipgpi.det.my.id
+port: 443
+type: trojan
+password: eea95f0e-35e4-41ef-82cd-c9f8950fa9be
+network: ws
+sni: vipgpi.det.my.id
+skip-cert-verify: true
+udp: true
+ws-opts:
+path: /trojan-ws
+headers:
+Host: vipgpi.det.my.id
     udp: true
   - name: AKUN2
     server: quiz.int.vidio.com
@@ -167,5 +165,6 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
