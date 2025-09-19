@@ -34,7 +34,7 @@ dns:
 proxies:
   - name: AKUN1
     server: quiz.int.vidio.com
-    port: 80
+    port: 443
     type: trojan
     uuid: eea95f0e-35e4-41ef-82cd-c9f8950fa9be
     alterId: 0
@@ -167,4 +167,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
